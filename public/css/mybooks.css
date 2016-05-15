@@ -1,0 +1,212 @@
+body
+{
+    font-family: Verdana, Arial;
+    font-size: 100%;
+}
+
+nav,
+section
+{
+    display: block;
+}
+
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a
+{
+    font-size: 1.4em;
+
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover
+{
+    padding-bottom: 1.2em;
+
+    color: #222;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-brand:focus
+{
+    padding-bottom: 1.2em;
+
+    color: #222;
+    background-color: #e7e7e7;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus
+{
+    height: 3.7em;
+}
+
+
+#twitter-logo
+{
+    font-size: 1.3em;
+
+    color: #1da1f2;
+}
+
+#facebook-logo
+{
+    font-size: 1.3em;
+
+    color: #fff;
+}
+
+#facebook-a:hover #facebook-logo,
+#facebook-a:focus #facebook-logo
+{
+    color: #3B5998;
+}
+
+.navigation-bar
+{
+    background-color: #232f3e;
+}
+
+
+li span,
+.request-details
+{
+    display: none;
+}
+
+#search-button
+{
+    cursor: pointer;
+
+    color: #333;
+    background-color: #febd69;
+}
+
+.book
+{
+    font-size: 1.1em;
+
+    margin-bottom: 2em;
+    padding-top: 1em;
+
+    border-top: thin solid #ddd;
+}
+
+.book-title
+{
+    font-size: 1.6em;
+    font-style: normal;
+
+    margin-right: 1em;
+
+    color: #003;
+}
+
+.book-details
+{
+    margin-left: -1em;
+}
+
+.add-button,
+.remove-button,
+.request-button,
+.swap-button
+{
+    font-size: 1.3em;
+
+    margin-top: -.1em;
+    margin-bottom: .5em;
+}
+
+.add-button:focus,
+.add-button:hover,
+#search-button:focus,
+#search-button:hover,
+.request-button:focus,
+.request-button:hover
+{
+    color: white;
+    background-color: #333;
+}
+
+.close-button
+{
+    margin-top: 5em;
+}
+
+.btn-danger
+{
+    background-color: #c9302c;
+}
+
+.btn-danger:hover,
+.btn-danger:focus
+{
+    background-color: #541512;
+}
+
+
+p
+{
+    font-size: 1.4em;
+    line-height: 70%;
+}
+
+p.book-title,
+p.authors
+{
+    line-height: 100%;
+}
+
+img
+{
+    max-height: 15em;
+}
+
+#add-books-link
+{
+    color: black;
+}
+
+span
+{
+    display: none;
+}
+
+.swap
+{
+    margin-bottom: 2em;
+}
+
+.requests-others
+{
+    padding-bottom: 2em;
+
+    border-bottom: 1px solid #222;
+}
+
+
+span.username
+{
+    display: inline;
+
+    color: #003;
+}
+
+
+@media screen and (max-width:767px)
+{
+    img,
+    .book-details
+    {
+        margin-left: 5%;
+    }
+
+    img
+    {
+        margin-bottom: 1em;
+    }
+}

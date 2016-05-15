@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<script src='/build/js/swaps.js'></script>
+		<!--[if lt IE 9]>
+		<script src="/lib/html5shiv.min.js"></script>
+		<![endif]-->
+		<!--[if (gte IE 6)&(lte IE 8)]>
+		<script type="text/javascript" src="/lib/selectivizr.-min.js"></script>
+		<noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+		<![endif]-->
+		<title>Swaps</title>
+	</head>
+	<body>
+		<nav class='navbar navbar-default container-fluid navigation-bar'>
+			<div class='navbar-header'>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class='navbar-brand' href='#'>Book Swap</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class='nav navbar-nav navbar-right'>
+					<li><a href='/'>Home</a></li>
+					<li><a href='/mybooks'>My books</a></li>
+					<li><a href='/addbooks'>Add books</a></li>
+					<li class='active'><a href='#' id='swaps-link'>Swaps<span class='sr-only'>(current)</span></a></li>
+				</ul>
+			</div>
+		</nav>
+		<h2 class='container'>Requests for my books</h1>
+		<div class='requests-others' class='container'></div>
+		<h2 class='container'>My requests</h1>
+		<div class='requests-mine' class='container'></div>
+		<script src='/lib/store.min.js'></script>
+		<script src='/build/js/swaps2.js'></script>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<script src='/lib/store.min.js'></script>
+		<script src='/build/js/requestbook.js'></script>
+		<!--[if lt IE 9]>
+		<script src="/lib/html5shiv.min.js"></script>
+		<![endif]-->
+		<!--[if (gte IE 6)&(lte IE 8)]>
+		<script type="text/javascript" src="/lib/selectivizr.-min.js"></script>
+		<noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+		<![endif]-->
+		<title>Request book</title>
+	</head>
+	<body>
+		<nav class='navbar navbar-default container-fluid navigation-bar'>
+			<div class='navbar-header'>
+				<a class='navbar-brand' href='http://localhost:3000'>Book Swap</a>
+			</div>
+		</nav>
+		<div id='requested-book' class='container'><h4>Swap:</h4></div>
+		<div id='mybooks' class='container'><h4>For:</h4></div>
+		<div class='container'>
+			<div class='row'>
+			<button type='button' class='btn btn-danger pull-right close-button' >Close swap page</button>
+			</div>
+		</div>
+		<script src='/build/js/requestbook2.js'></script>
+	</body>
+</html>
