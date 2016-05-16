@@ -11,14 +11,16 @@ router.use('/', function(req, res, next) {
 })
 
 
-// router.get('/', function(req, res){
-// 	res.render('mybooks', {user: {
-// 								id: req.user.id,
-// 								service: req.user.service
-// 							   }
-// 						}
-// 	)
-// });
+router.get('/', function(req, res){
+	res.render('mybooks', {user: {
+								id: req.user.id,
+								displayname: req.user.displayName,
+								socialmedia: req.user.socialMedia
+							   }
+						}
+	)
+});
+
 
 router.get('/', function(req, res){
 	res.render('mybooks');

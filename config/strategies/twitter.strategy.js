@@ -15,7 +15,7 @@ module.exports = function(){
             user.twitter.id = profile.id;
             user.twitter.token = token;
             user.id = profile.id;
-            
+            user.socialMedia = 'Facebook';
             
             done(null, user);
 	}))

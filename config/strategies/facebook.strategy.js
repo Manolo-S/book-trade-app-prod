@@ -15,6 +15,7 @@ module.exports = function(){
             user.facebook.id = profile.id;
             user.facebook.token = accessToken;
             user.id = profile.id;
+            user.socialMedia = 'Facebook';
             
             done(null, user);
 	}))
