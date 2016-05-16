@@ -5,7 +5,8 @@
 	var book;
 	var bookId;
 	var imageLink;
-	var user = store.get('user');                        //['twitter', '12345', 'Jan']; // placeholder for now, will later be used for twitter or facebook userid
+	// var user = store.get('user');                        //['twitter', '12345', 'Jan']; // placeholder for now, will later be used for twitter or facebook userid
+	var user = document.getElementById('user').textContent;
 	var addNewBookUrl = 'https://book-trade-ms.herokuapp.com/add-new-book';
 
 	function authorsFun(author, index) {

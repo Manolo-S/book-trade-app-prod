@@ -196,10 +196,9 @@ span.username
     color: #003;
 }
 
-.user-details {
+#user {
     display: none;
 }
-
 
 @media screen and (max-width:767px)
 {
@@ -214,3 +213,4 @@ span.username
         margin-bottom: 1em;
     }
 }
+

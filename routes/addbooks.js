@@ -11,18 +11,18 @@ router.use('/', function(req, res, next) {
 
 
 
-router.get('/', function(req, res){
-	res.render('addbooks')
-});
-
 // router.get('/', function(req, res){
-// 	res.render('index', {user: {
-// 								id: req.user.id,
-// 								service: req.user.service
-// 							   }
-// 						}
-// 	)
+// 	res.render('addbooks')
 // });
+
+router.get('/', function(req, res){
+	var userDetails = req.user.socialMedia + ',' + req.user.id + ',' + req.user.displayName;
+	res.render('mybooks', {user: {
+								userDetails: userDetails
+							   }
+						}
+	)
+});
 
 module.exports = router;
 

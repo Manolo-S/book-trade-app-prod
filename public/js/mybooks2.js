@@ -4,7 +4,7 @@
 	// var user = 'facebook,6789,klaas'; //TODO: change to store userid string after setting login via twitter/facebook
 	// var user = 'twitter,1234,jan';  //TODO: change to store userid string after setting login via twitter/facebook
 	// store.set('user', user);
-	var user = store.get('user');
+	var user = document.getElementById('user').textContent;
 	var removeBookUrl = 'https://book-trade-ms.herokuapp.com/remove-book';
 	var getMyBooksUrl = 'https://book-trade-ms.herokuapp.com/get-my-books';
 

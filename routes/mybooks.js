@@ -12,10 +12,9 @@ router.use('/', function(req, res, next) {
 
 
 router.get('/', function(req, res){
+	var userDetails = req.user.socialMedia + ',' + req.user.id + ',' + req.user.displayName;
 	res.render('mybooks', {user: {
-								id: req.user.id,
-								displayName: req.user.displayName,
-								socialMedia: req.user.socialMedia
+								userDetails: userDetails
 							   }
 						}
 	)
