@@ -17,7 +17,7 @@ router.use('/', function(req, res, next) {
 
 router.get('/', function(req, res){
 	var userDetails = req.user.socialMedia + ',' + req.user.id + ',' + req.user.displayName;
-	res.render('mybooks', {user: {
+	res.render('addbooks', {user: {
 								userDetails: userDetails
 							   }
 						}
